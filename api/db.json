@@ -1,0 +1,35 @@
+{
+
+    "courses":[
+        {
+            "id":1,
+            "content":"C# Microsoft firmasının inkişaf etdirdiyi yeni nəsil bir proqramlaşdırma dilidir.C# ilə nələr edə bilərik? C# ilə mobil proqramlar (IOS, Android, Windows), oyunlar, veb-saytlar, desktop proqramları yaratmaq mümkündür. C# proqramlaşdırma dili mobil telefon tətbiqlərinin,oyunlarının qurulmasında və back-end proqramlaşdırma üzrə çoxşaxəli istifadə edilir.",
+            "title":"C#",
+            "price":78
+        },
+        {
+            "id":2,
+            "content":"Flutter Google tərəfindən yaradılmış mobil, veb və masaüstü proqramları inkişaf etdirmək üçün istifadə edilə bilən pulsuz və açıq mənbəli mobil UI “framework”üdür. Mobil proqramların hazırlanmasında özünüzü təkmilləşdirmək istəyirsinizsə Flutter düzgün başlanğıc olacaq. Sürətli öyrənmə imkanı və təmin etdiyi bir çox faydalı mənbələr sayəsində Flutter ilə layihələrinizi sürətlə həyata keçirə bilərsiniz.",
+            "title":"Flutter",
+            "price":124
+        },
+        {
+            "id":3,
+            "content":"Python elmi araşdırmalarda, süni intellekt, data analitika, kiber-təhlükəsizlik və s. kimi bir çox sahələrdə istifadə olunan proqramlaşdırma dilidir. “Python”u digər proqramlaşdırma dilləri ilə müqayisə etsək:Sadə dildir, buna görə öyrənilməsi daha asandır Az kodla daha çox iş prinsipini özündə mənimsəyir Daha səliqəli kod ardıcıllığına malikdir İnsan dilinə daha yaxındır. ",
+            "title":"Python",
+            "price":90
+        },
+        {
+            "id":4,
+            "content":"Mern-stack texnologiyası 3 hissədən ibarətdir Front-end, Back-end, verilənlər bazası. Bir sözlə, full-stack development.Əsas üstünlüyü isə hər şeyin sadəcə Javascript və json istifadə olunaraq hazırlanmasıdır. Bu o deməkdir ki, sadəcə bir proqramlaşdırma dilini və Json strukturunu bilmək full-stack developer olmaq üçün kifayətdir.",
+            "title":"Mern-Stack",
+            "price":100
+        },
+        {
+            "id":5,
+            "content":"Full-stack (Front-end və back-end) proqramlaşdırma üzrə bir-neçə fərqli tədris proqramımız mövcuddur. 8 aylıq full-stack dərsləri Mern-stack tədris proqramından təşkil olunub. Bu proqram haqqında ətraflı məlumatı buradan oxuya bilərsiniz.  10 aylıq tədris proqramı Front-end (5 ay) və backend üzrə C# dərslərini əhatə edir. ",
+            "title":"Full-stack",
+            "price":130
+        }
+    ]
+}
