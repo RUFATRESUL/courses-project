@@ -34,8 +34,16 @@ function App() {
   return (
     <div className="App">
       {loading ? <Loading/> : (
+        <>
+        {courses.length ===0 ?
+        <div className='updateCourses'>
+          <h2>Courses have been deleted :</h2>
+          <button className='deleteButton' onClick={()=>fetchCourses()}>Update</button>
+        </div>
+        :(<Courses courses={courses} deleteCourse={courseId}/>)
+        }
+        </>
 
-     <Courses courses={courses} deleteCourse={courseId}/>
       )}
     </div>
   );

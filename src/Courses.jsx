@@ -2,7 +2,7 @@ import Course from './Course'
 function Courses({courses,deleteCourse}) {
     // console.log(courses);
     return ( <div className="courseList">
-        <div><h2>Kurslarim :</h2></div>
+        <div><h2>Courses :</h2></div>
         <div className='cardDiv'>
         {courses.map((course) =>{
             return(

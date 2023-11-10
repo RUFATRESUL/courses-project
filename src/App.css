@@ -31,3 +31,9 @@
 .coursePrice{
     color: rgb(0, 211, 0);
 }
+.updateCourses{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
