@@ -28,3 +28,6 @@
     transition: 0.5s ease-in-out;
     outline: none;
 }
+.coursePrice{
+    color: rgb(0, 211, 0);
+}
