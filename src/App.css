@@ -37,3 +37,9 @@
     align-items: center;
     flex-direction: column;
 }
+.iconButton{
+    border: none;
+    background-color: white;
+    font-size: 28px;
+    color: rgb(85, 255, 0);
+}
