@@ -2,14 +2,49 @@ import { useState } from 'react';
 // import Course from './Course'
 import {FaChevronLeft,FaChevronRight} from 'react-icons/fa'
 
-function Courses({courses,deleteCourse}) {
+function Courses({courses}) {
     const [index, setIndex] = useState(0);
     const{title,price,content} = courses[index]
-    // console.log(courses);
+
+    const checkIndex = (index) =>{
+        debugger
+        if(index < 0){
+            return courses.length - 1;
+        }
+        if(index > courses.length - 1){
+            return 0;
+        }
+        return index ;
+            
+    };
+
+    const randomCoursesAssigment = () =>{
+        let randomNumber = Math.floor(Math.random() * courses.length)
+        if(randomNumber === index){
+            randomNumber = index + 1;
+        }
+        setIndex(checkIndex(randomNumber))
+    }
+    
+    const prevIcon = () =>{
+        setIndex((index)=>{
+            let newCourse = index - 1;
+            return checkIndex(newCourse)
+        })
+    }
+    const nextIcon = () =>{
+        setIndex((index)=>{
+            let newCourse = index + 1;
+            return checkIndex(newCourse)
+        })
+    }
     return ( <div className="courseList">
-        <div><h2>Kurslarim :</h2></div>
+        <div className='randomCourses'>
+            <h2>Kurslarim :</h2>
+            <button className='deleteButton' onClick={randomCoursesAssigment}>random course assignment</button>
+            </div>
         <div className='cardDiv'>
-            <button className='iconButton'>
+            <button className='iconButton' onClick={prevIcon}>
                 <FaChevronLeft/>
             </button>
         <div className="card">
@@ -20,7 +55,7 @@ function Courses({courses,deleteCourse}) {
         <p className="courseContent">{content}</p>
        
     </div>
-            <button className='iconButton'>
+            <button className='iconButton' onClick={nextIcon}>
                 <FaChevronRight/>
             </button>
       
